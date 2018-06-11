@@ -75,4 +75,9 @@ WIN_COMBINATIONS = [
        position == "X" || position == "O"
      end
   end
+
+  def draw?
+    full? && !won?
+  end
+
 end
