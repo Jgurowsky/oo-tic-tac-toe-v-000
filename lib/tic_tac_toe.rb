@@ -80,4 +80,8 @@ WIN_COMBINATIONS = [
     full? && !won?
   end
 
+  def over?
+    draw? || won?
+  end
+
 end
