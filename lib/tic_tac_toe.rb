@@ -84,4 +84,9 @@ WIN_COMBINATIONS = [
     draw? || won?
   end
 
+  def winner
+    if won?
+      @board[won?[0]]
+    end
+  end
 end
