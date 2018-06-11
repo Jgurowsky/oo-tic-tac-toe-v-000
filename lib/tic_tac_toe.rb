@@ -69,4 +69,10 @@ WIN_COMBINATIONS = [
       @board[combo[0]] == @board[combo[1]] && @board[combo[1]] == @board[combo[2]] && position_taken?(combo[0])
     end
   end
+
+  def full?
+     @board.all? do |position|
+       position == "X" || position == "O"
+     end
+  end
 end
