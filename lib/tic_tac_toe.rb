@@ -48,6 +48,10 @@ WIN_COMBINATIONS = [
     counter
   end
 
+  def current_player
+    turn_count.even? ? "X" : "O"
+  end
+
   def turn
     puts "Please enter 1-9:"
     input = gets.strip
